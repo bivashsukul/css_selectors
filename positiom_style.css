@@ -1,0 +1,184 @@
+
+
+.position{
+    position: relative;
+    border: 2px solid red;
+    max-width: 700px;
+    height: 400px;
+}
+.box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid hotpink;
+}
+.box1{
+    top: 0;
+    left: 0;
+    background-color: rgb(197, 223, 197);
+    z-index: 2;
+}
+.box2{
+    top: 0;
+    right: 0;
+    background-color: rgb(11, 11, 151);
+}
+.box3{
+    left: 0;
+    bottom: 0;
+    background-color: rgb(132, 132, 98);
+}
+.box4{
+    right: 300px;
+    bottom: 150px;
+    
+    background-color: rgb(152, 171, 156);
+    
+}
+.box5{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(151, 86, 86);
+}
+div>h6{
+    background-color: aqua;
+}
+/* P~  ul selector */
+p ~ ul {
+    background-color: blueviolet;
+}
+
+/* <h1>[target="_blank selector</h1> */
+a[target]{
+    background-color: blueviolet;
+}
+
+/* div[class^="test"] selector*/
+div[class^="test"] {
+    background: #ffff00;
+  }
+
+/* <h1>div[class="test"] selector</h1> */
+div[class*="test"] {
+    background: #ffff00;
+  }
+/* <br>
+<h1>Demo of the :active selector</h1> */
+a:active {
+    background-color: yellow;
+  }
+
+/* <h1>Demo of the ::after selector</h1> */
+p::after { 
+    content: " - Remember this";
+  }
+/* 
+<h1>Demo of the ::before selector< */
+p::before {
+    content: "Read this -";
+  }
+/* 	input:checked */
+
+  input:checked {
+    height: 30px;
+    width: 30px;
+  }
+/*  <h1>checked selector</h1> */
+input:checked {
+  height: 50px;
+  width: 50px;
+}
+/* <h1>The default Selector</h1> */
+input:default {
+  box-shadow: 0 0 1px 8.5px red;
+}
+/* CSS :disabled Selector */
+
+input[type=text]:enabled {
+  background: #ffff00;
+}
+
+input[type=text]:disabled {
+  background: #dddddd;
+}
+/* css empty selectors */
+p:empty {
+  width: 100px;
+  height: 20px;
+  background: #ff0000;
+}
+/* h1>css enable and disabled selectors</h1> */
+input[type=text]:enabled {
+  background: #ffff00;
+}
+
+input[type=text]:disabled {
+  background: #dddddd;
+}
+
+
+
+/* 
+<h1>Demo of the ::first-line selector</h1>
+ */
+ p::first-line {
+  background-color: yellow;
+ }
+ /* css first of type selector */
+ p:first-of-type {
+  background: red;
+}
+/* <h1>Demo of the :focus selector</h1> */
+input:focus {
+  background-color: yellow;
+}
+
+/* hover selector */
+a:hover {
+  background-color: yellow;
+}
+/* 
+<h1>Demo of the :in-range selector</h1> */
+input:in-range {
+  border: 2px solid yellow;
+}
+/* <h1>The indeterminate Selector</h1> */
+input:indeterminate {
+  box-shadow: 0 0 1px 1px red;
+}
+/* Demo of the :link selector */
+a:link {
+  background-color: yellow;
+}
+/* Demo of the ::marker */
+::marker { 
+  color: red;
+}
+/* nth-chaild selector */
+/* Selects the second element of div siblings */
+div:nth-child(2) {
+  background: red;
+}
+
+/* Selects the second li element in a list */
+li:nth-child(2) {
+  background: lightgreen;
+}
+
+/* Selects every third element among any group of siblings */
+:nth-child(3) {
+  background: yellow;
+}
+/* nth-last chaild */
+
+/* thr tirget element*/
+:target {
+  border: 2px solid #00f2ff;
+  background-color: #db0690;
+}
+
+/* visited selector */
+a:visited {
+  color: green;
+}
